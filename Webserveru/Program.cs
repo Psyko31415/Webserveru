@@ -26,7 +26,7 @@ namespace Webserveru
                     string content = "<!DOCTYPE html><form method=\"post\"><input name=\"trams\"/><input type=\"submit\" name=\"ost\" value=\"ost\" /></form>";
                     
                     HTTPRequestHandler requestHandler = new HTTPRequestHandler(request, ref s);
-                    requestHandler.Reply(content);
+                    requestHandler.Reply();
                 }
                 s.Close();
             }
